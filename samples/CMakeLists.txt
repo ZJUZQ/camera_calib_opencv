@@ -1,0 +1,14 @@
+add_executable (multi_cameras_calibration multi_cameras_calibration.cpp)
+target_link_libraries(multi_cameras_calibration zhou_calib)
+
+add_executable (omni_calibration omni_calibration.cpp)
+target_link_libraries(omni_calibration zhou_calib)
+
+add_executable (omni_stereo_calibration omni_stereo_calibration.cpp)
+target_link_libraries(omni_stereo_calibration zhou_calib)
+
+add_executable (random_pattern_calibration random_pattern_calibration.cpp)
+target_link_libraries(random_pattern_calibration zhou_calib)
+
+add_executable (random_pattern_generator random_pattern_generator.cpp)
+target_link_libraries(random_pattern_generator zhou_calib)
