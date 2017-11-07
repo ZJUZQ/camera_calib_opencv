@@ -12,3 +12,6 @@ target_link_libraries(random_pattern_calibration zhou_calib)
 
 add_executable (random_pattern_generator random_pattern_generator.cpp)
 target_link_libraries(random_pattern_generator zhou_calib)
+
+add_executable (camera_save camera_save.cpp)
+target_link_libraries(camera_save zhou_calib)

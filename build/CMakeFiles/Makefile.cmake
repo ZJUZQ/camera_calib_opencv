@@ -50,6 +50,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/zhou_calib.dir/DependInfo.cmake"
+  "samples/CMakeFiles/camera_save.dir/DependInfo.cmake"
   "samples/CMakeFiles/omni_calibration.dir/DependInfo.cmake"
   "samples/CMakeFiles/random_pattern_generator.dir/DependInfo.cmake"
   "samples/CMakeFiles/multi_cameras_calibration.dir/DependInfo.cmake"

@@ -84,7 +84,7 @@ src/preinstall:
 src/CMakeFiles/zhou_calib.dir/all:
 	$(MAKE) -f src/CMakeFiles/zhou_calib.dir/build.make src/CMakeFiles/zhou_calib.dir/depend
 	$(MAKE) -f src/CMakeFiles/zhou_calib.dir/build.make src/CMakeFiles/zhou_calib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target zhou_calib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target zhou_calib"
 .PHONY : src/CMakeFiles/zhou_calib.dir/all
 
 # Include target in all.
@@ -118,6 +118,7 @@ clean: src/CMakeFiles/zhou_calib.dir/clean
 # Directory level rules for directory samples
 
 # Convenience name for "all" pass in the directory.
+samples/all: samples/CMakeFiles/camera_save.dir/all
 samples/all: samples/CMakeFiles/omni_calibration.dir/all
 samples/all: samples/CMakeFiles/random_pattern_generator.dir/all
 samples/all: samples/CMakeFiles/multi_cameras_calibration.dir/all
@@ -127,6 +128,7 @@ samples/all: samples/CMakeFiles/random_pattern_calibration.dir/all
 .PHONY : samples/all
 
 # Convenience name for "clean" pass in the directory.
+samples/clean: samples/CMakeFiles/camera_save.dir/clean
 samples/clean: samples/CMakeFiles/omni_calibration.dir/clean
 samples/clean: samples/CMakeFiles/random_pattern_generator.dir/clean
 samples/clean: samples/CMakeFiles/multi_cameras_calibration.dir/clean
@@ -141,13 +143,50 @@ samples/preinstall:
 .PHONY : samples/preinstall
 
 #=============================================================================
+# Target rules for target samples/CMakeFiles/camera_save.dir
+
+# All Build rule for target.
+samples/CMakeFiles/camera_save.dir/all: src/CMakeFiles/zhou_calib.dir/all
+	$(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/depend
+	$(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=1,2 "Built target camera_save"
+.PHONY : samples/CMakeFiles/camera_save.dir/all
+
+# Include target in all.
+all: samples/CMakeFiles/camera_save.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+samples/CMakeFiles/camera_save.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zq/camera_calib_opencv/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 samples/CMakeFiles/camera_save.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zq/camera_calib_opencv/build/CMakeFiles 0
+.PHONY : samples/CMakeFiles/camera_save.dir/rule
+
+# Convenience name for target.
+camera_save: samples/CMakeFiles/camera_save.dir/rule
+
+.PHONY : camera_save
+
+# clean rule for target.
+samples/CMakeFiles/camera_save.dir/clean:
+	$(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/clean
+.PHONY : samples/CMakeFiles/camera_save.dir/clean
+
+# clean rule for target.
+clean: samples/CMakeFiles/camera_save.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target samples/CMakeFiles/omni_calibration.dir
 
 # All Build rule for target.
 samples/CMakeFiles/omni_calibration.dir/all: src/CMakeFiles/zhou_calib.dir/all
 	$(MAKE) -f samples/CMakeFiles/omni_calibration.dir/build.make samples/CMakeFiles/omni_calibration.dir/depend
 	$(MAKE) -f samples/CMakeFiles/omni_calibration.dir/build.make samples/CMakeFiles/omni_calibration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=3,4 "Built target omni_calibration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=5,6 "Built target omni_calibration"
 .PHONY : samples/CMakeFiles/omni_calibration.dir/all
 
 # Include target in all.
@@ -184,7 +223,7 @@ clean: samples/CMakeFiles/omni_calibration.dir/clean
 samples/CMakeFiles/random_pattern_generator.dir/all: src/CMakeFiles/zhou_calib.dir/all
 	$(MAKE) -f samples/CMakeFiles/random_pattern_generator.dir/build.make samples/CMakeFiles/random_pattern_generator.dir/depend
 	$(MAKE) -f samples/CMakeFiles/random_pattern_generator.dir/build.make samples/CMakeFiles/random_pattern_generator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=9,10 "Built target random_pattern_generator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=11,12 "Built target random_pattern_generator"
 .PHONY : samples/CMakeFiles/random_pattern_generator.dir/all
 
 # Include target in all.
@@ -221,7 +260,7 @@ clean: samples/CMakeFiles/random_pattern_generator.dir/clean
 samples/CMakeFiles/multi_cameras_calibration.dir/all: src/CMakeFiles/zhou_calib.dir/all
 	$(MAKE) -f samples/CMakeFiles/multi_cameras_calibration.dir/build.make samples/CMakeFiles/multi_cameras_calibration.dir/depend
 	$(MAKE) -f samples/CMakeFiles/multi_cameras_calibration.dir/build.make samples/CMakeFiles/multi_cameras_calibration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=1,2 "Built target multi_cameras_calibration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=3,4 "Built target multi_cameras_calibration"
 .PHONY : samples/CMakeFiles/multi_cameras_calibration.dir/all
 
 # Include target in all.
@@ -258,7 +297,7 @@ clean: samples/CMakeFiles/multi_cameras_calibration.dir/clean
 samples/CMakeFiles/omni_stereo_calibration.dir/all: src/CMakeFiles/zhou_calib.dir/all
 	$(MAKE) -f samples/CMakeFiles/omni_stereo_calibration.dir/build.make samples/CMakeFiles/omni_stereo_calibration.dir/depend
 	$(MAKE) -f samples/CMakeFiles/omni_stereo_calibration.dir/build.make samples/CMakeFiles/omni_stereo_calibration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=5,6 "Built target omni_stereo_calibration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=7,8 "Built target omni_stereo_calibration"
 .PHONY : samples/CMakeFiles/omni_stereo_calibration.dir/all
 
 # Include target in all.
@@ -295,7 +334,7 @@ clean: samples/CMakeFiles/omni_stereo_calibration.dir/clean
 samples/CMakeFiles/random_pattern_calibration.dir/all: src/CMakeFiles/zhou_calib.dir/all
 	$(MAKE) -f samples/CMakeFiles/random_pattern_calibration.dir/build.make samples/CMakeFiles/random_pattern_calibration.dir/depend
 	$(MAKE) -f samples/CMakeFiles/random_pattern_calibration.dir/build.make samples/CMakeFiles/random_pattern_calibration.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=7,8 "Built target random_pattern_calibration"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zq/camera_calib_opencv/build/CMakeFiles --progress-num=9,10 "Built target random_pattern_calibration"
 .PHONY : samples/CMakeFiles/random_pattern_calibration.dir/all
 
 # Include target in all.

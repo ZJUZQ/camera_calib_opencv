@@ -124,6 +124,19 @@ zhou_calib/fast:
 .PHONY : zhou_calib/fast
 
 #=============================================================================
+# Target rules for targets named camera_save
+
+# Build rule for target.
+camera_save: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 camera_save
+.PHONY : camera_save
+
+# fast build rule for target.
+camera_save/fast:
+	$(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/build
+.PHONY : camera_save/fast
+
+#=============================================================================
 # Target rules for targets named omni_calibration
 
 # Build rule for target.
@@ -197,6 +210,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... zhou_calib"
+	@echo "... camera_save"
 	@echo "... omni_calibration"
 	@echo "... random_pattern_generator"
 	@echo "... multi_cameras_calibration"

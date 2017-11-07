@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+samples/CMakeFiles/camera_save.dir/rule:
+	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f CMakeFiles/Makefile2 samples/CMakeFiles/camera_save.dir/rule
+.PHONY : samples/CMakeFiles/camera_save.dir/rule
+
+# Convenience name for target.
+camera_save: samples/CMakeFiles/camera_save.dir/rule
+
+.PHONY : camera_save
+
+# fast build rule for target.
+camera_save/fast:
+	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/build
+.PHONY : camera_save/fast
+
+# Convenience name for target.
 samples/CMakeFiles/omni_calibration.dir/rule:
 	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f CMakeFiles/Makefile2 samples/CMakeFiles/omni_calibration.dir/rule
 .PHONY : samples/CMakeFiles/omni_calibration.dir/rule
@@ -184,6 +199,33 @@ random_pattern_calibration: samples/CMakeFiles/random_pattern_calibration.dir/ru
 random_pattern_calibration/fast:
 	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f samples/CMakeFiles/random_pattern_calibration.dir/build.make samples/CMakeFiles/random_pattern_calibration.dir/build
 .PHONY : random_pattern_calibration/fast
+
+camera_save.o: camera_save.cpp.o
+
+.PHONY : camera_save.o
+
+# target to build an object file
+camera_save.cpp.o:
+	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/camera_save.cpp.o
+.PHONY : camera_save.cpp.o
+
+camera_save.i: camera_save.cpp.i
+
+.PHONY : camera_save.i
+
+# target to preprocess a source file
+camera_save.cpp.i:
+	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/camera_save.cpp.i
+.PHONY : camera_save.cpp.i
+
+camera_save.s: camera_save.cpp.s
+
+.PHONY : camera_save.s
+
+# target to generate assembly for a file
+camera_save.cpp.s:
+	cd /home/zq/camera_calib_opencv/build && $(MAKE) -f samples/CMakeFiles/camera_save.dir/build.make samples/CMakeFiles/camera_save.dir/camera_save.cpp.s
+.PHONY : camera_save.cpp.s
 
 multi_cameras_calibration.o: multi_cameras_calibration.cpp.o
 
@@ -327,12 +369,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... camera_save"
 	@echo "... omni_calibration"
 	@echo "... edit_cache"
 	@echo "... random_pattern_generator"
 	@echo "... multi_cameras_calibration"
 	@echo "... omni_stereo_calibration"
 	@echo "... random_pattern_calibration"
+	@echo "... camera_save.o"
+	@echo "... camera_save.i"
+	@echo "... camera_save.s"
 	@echo "... multi_cameras_calibration.o"
 	@echo "... multi_cameras_calibration.i"
 	@echo "... multi_cameras_calibration.s"
